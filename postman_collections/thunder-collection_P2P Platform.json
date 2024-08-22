@@ -1,0 +1,1037 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "P2P Platform",
+    "dateExported": "2023-05-30T06:58:55.136Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-03-23T03:47:08.022Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Admin",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-04-18T06:45:15.208Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Authentication",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-03-23T03:47:17.749Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Account",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-03-23T07:52:06.725Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "585010b6-9565-48b5-8699-38e810382634",
+            "name": "Profile",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-04-05T08:09:48.569Z",
+            "sortNum": 35000
+        },
+        {
+            "_id": "30fd5886-9b6a-4573-9539-ae7373f8fb21",
+            "name": "Trade",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-03-28T02:19:09.126Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "e643249c-6e29-4999-90f1-b60804e852b3",
+            "name": "Order",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-03-29T02:20:11.295Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "2d15ac9b-9153-4d2f-ac0e-ef16757ccadb",
+            "name": "Review",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-03-30T04:00:36.438Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "a29e6b94-9d89-497e-bbc8-7bf4894117ba",
+            "name": "Transaction",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-03-31T02:33:43.382Z",
+            "sortNum": 70000
+        },
+        {
+            "_id": "cebd12af-9a7a-479e-bfde-5fed6a982b05",
+            "name": "Notice",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-04-25T07:25:30.058Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "4f03df3f-a2f9-48d1-88f1-3fd8055d414c",
+            "name": "FAQ",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-04-25T08:04:29.729Z",
+            "sortNum": 85000
+        },
+        {
+            "_id": "d131ad78-ecdb-4048-bd57-fc678c6c27e0",
+            "name": "Webhooks",
+            "containerId": "0fbe9b97-b99e-4440-9149-4b18e70d881d",
+            "created": "2023-04-03T07:13:20.011Z",
+            "sortNum": 90000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e942e066-b673-41d7-badb-9aa0b881e39a",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "2d15ac9b-9153-4d2f-ac0e-ef16757ccadb",
+            "name": "Create a review",
+            "url": "localhost:3000/api/review/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-30T04:00:41.794Z",
+            "modified": "2023-03-31T09:49:36.124Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"order_id\": \"6426abcca7af3128167cf70c\",\n  \"comments\": \"매우 늦은 응답 및 느린 승인\",\n  \"assessment_type\": 0,\n  \"review\": [0, 2]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "459e3bdf-4b29-49ad-b5f0-7536219be2c6",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "a29e6b94-9d89-497e-bbc8-7bf4894117ba",
+            "name": "Create a transaction",
+            "url": "localhost:3000/api/transaction/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-31T02:34:04.536Z",
+            "modified": "2023-03-31T02:38:27.531Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"transaction_type\": 3,\n  \"trading_coin\": \"bitcoin\",\n  \"quantity\": \"1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "667b422a-64e5-42e0-be5f-37da8981eb69",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "cebd12af-9a7a-479e-bfde-5fed6a982b05",
+            "name": "Add a notice",
+            "url": "localhost:3000/api/notice",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-24T07:59:59.041Z",
+            "modified": "2023-04-27T09:39:33.020Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"New Listing: TAMA/USDT — Grab a Share of the 4,000,000 TAMA Prize Pool\",\n  \"content\": {\n    \"time\": 1682577456110,\n    \"blocks\": [\n      {\n        \"id\": \"mhTl6ghSkV\",\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"TAMA will be available for trades via Spot Grid Bots when it's listed.To celebrate, we've prepared two (2) special events with a total prize pool of 4,000,000 TAMA just for you.\"\n        }\n      },\n      {\n        \"id\": \"l98dyx3yjb\",\n        \"type\": \"header\",\n        \"data\": {\n          \"text\": \"Thank you for your continued support!\",\n          \"level\": 3\n        }\n      }\n    ]\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "79c1aab0-8411-4df9-9090-837a27b58d9f",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "4f03df3f-a2f9-48d1-88f1-3fd8055d414c",
+            "name": "Create a FAQ",
+            "url": "localhost:3000/api/faq",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-25T08:04:29.729Z",
+            "modified": "2023-05-02T09:08:38.727Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"FAQ 1\",\n  \"content\": \"This is a test FAQ\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "197b272b-d2a4-4260-80a9-423bd602418a",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "cebd12af-9a7a-479e-bfde-5fed6a982b05",
+            "name": "Edit a notice",
+            "url": "localhost:3000/api/notice",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-04-25T07:47:55.874Z",
+            "modified": "2023-04-28T07:07:01.870Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"notice_id\": \"644a42838bb1a92db49c9eaa\",\n  \"title\": \"USDT Perpetual: Risk Limit Adjustment for RNDRUSDT & FITFIUSDT\",\n  \"new_notice\": false\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b071276-023d-431f-8a2e-be3fce054755",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "4f03df3f-a2f9-48d1-88f1-3fd8055d414c",
+            "name": "Edit a FAQ",
+            "url": "localhost:3000/api/faq",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-04-25T08:04:29.730Z",
+            "modified": "2023-04-25T09:13:56.915Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"faq_id\": \"644797e68ad8c138f5fcaaa6\",\n  \"content\": \"some content goes here\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9cc36928-4a15-4ce3-8ee9-5cc27cf22d84",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Register",
+            "url": "localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-23T03:47:24.438Z",
+            "modified": "2023-04-12T05:04:44.086Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ayush1@parallax.co.in\",\n  \"password\": \"Moiingroup@1\",\n  \"phone\": \"+919323985695\",\n  \"client_id\": \"ayush_12\",\n  \"referrer\": \"mohan95\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5e4add0c-a9b4-46dc-8067-f6932a05c592",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "2d15ac9b-9153-4d2f-ac0e-ef16757ccadb",
+            "name": "Get all reviews of a seller",
+            "url": "localhost:3000/api/review/reviews/641bfc1e421ea3fb9646f04e/1",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-30T07:43:56.075Z",
+            "modified": "2023-03-30T09:33:42.819Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2837981-28f9-4c69-af6c-c44a48ea7bc6",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "a29e6b94-9d89-497e-bbc8-7bf4894117ba",
+            "name": "Get all transactions by transaction_type & trading_coin",
+            "url": "localhost:3000/api/transaction/transactions/0/bitcoin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-31T02:48:57.423Z",
+            "modified": "2023-04-11T02:48:13.826Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2e70e661-e2a3-45ce-9b5a-e9e38709f0b1",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "cebd12af-9a7a-479e-bfde-5fed6a982b05",
+            "name": "Get all notices",
+            "url": "localhost:3000/api/notice/notices/3",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-25T07:11:25.876Z",
+            "modified": "2023-05-30T06:58:26.010Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6b90eb02-eef7-4ff0-9ea2-4901723bb1b3",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "4f03df3f-a2f9-48d1-88f1-3fd8055d414c",
+            "name": "Get all FAQs",
+            "url": "localhost:3000/api/faq/faqs/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-25T08:04:29.731Z",
+            "modified": "2023-04-28T06:05:29.087Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d8cb35e3-7ac5-4e9b-881a-089af28f3ee3",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Login",
+            "url": "localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-23T07:33:59.255Z",
+            "modified": "2023-04-17T08:45:44.902Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"client_id\": \"mohan95\",\n  \"password\": \"Moiingroup@4541\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8fa6106-a524-4b2c-989a-d91fcd664821",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "a29e6b94-9d89-497e-bbc8-7bf4894117ba",
+            "name": "Get all transactions by trading_coin",
+            "url": "localhost:3000/api/transaction/transactions/bitcoin",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-11T02:58:25.761Z",
+            "modified": "2023-04-11T02:59:30.640Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9da8732f-9d15-4425-a349-c6339ae0fb85",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "cebd12af-9a7a-479e-bfde-5fed6a982b05",
+            "name": "Delete a notice by notice id",
+            "url": "localhost:3000/api/notice/644a37b5dee96184dd000528",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-04-25T07:59:38.515Z",
+            "modified": "2023-04-27T09:29:19.467Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "595202af-8898-41c1-897e-32a22df28ee9",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "4f03df3f-a2f9-48d1-88f1-3fd8055d414c",
+            "name": "Delete a FAQ by faq_id",
+            "url": "localhost:3000/api/faq/644797e68ad8c138f5fcaaa6",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-04-25T08:04:29.732Z",
+            "modified": "2023-04-25T09:21:10.623Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4207dcc-5ef9-4ce6-b9ed-cea57dff4271",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Get Account Details",
+            "url": "localhost:3000/api/account",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-23T07:52:18.980Z",
+            "modified": "2023-03-27T07:38:16.806Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ddd78ad7-ce9e-472f-9d7a-42523d908a1d",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Check user",
+            "url": "localhost:3000/api/auth/check-user",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-03T02:51:35.059Z",
+            "modified": "2023-04-03T05:11:17.153Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6d06c2a9-7f95-4def-8165-8985aa7eb159",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "cebd12af-9a7a-479e-bfde-5fed6a982b05",
+            "name": "Search notices by pagination",
+            "url": "localhost:3000/api/notice/search/TAMA+listing/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-27T03:10:46.352Z",
+            "modified": "2023-04-28T09:13:59.240Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "58df4d95-be97-4037-a77d-f137e23c4139",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Send Email Verification",
+            "url": "localhost:3000/api/auth/send-email-verification",
+            "method": "POST",
+            "sortNum": 45000,
+            "created": "2023-04-05T02:37:29.209Z",
+            "modified": "2023-04-05T07:21:57.985Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ayush@parallax.co.in\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e83d386a-08e2-417e-8b84-6134738dea22",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Send SMS Verification",
+            "url": "localhost:3000/api/auth/send-phone-verification",
+            "method": "POST",
+            "sortNum": 45625,
+            "created": "2023-04-10T06:33:51.586Z",
+            "modified": "2023-04-18T07:28:54.401Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"+821079634457\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0721b83c-ed12-4200-95bd-cea5a7f63383",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Check username/client_id is available",
+            "url": "localhost:3000/api/auth/check-client-id",
+            "method": "POST",
+            "sortNum": 46250,
+            "created": "2023-04-05T06:32:40.470Z",
+            "modified": "2023-04-05T09:31:05.567Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"client_id\": \"mohan95\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "51aeaa69-74ef-42d0-9d4a-e2602e5930ec",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Verify Email",
+            "url": "localhost:3000/api/auth/verify-email",
+            "method": "POST",
+            "sortNum": 47500,
+            "created": "2023-04-05T05:52:15.608Z",
+            "modified": "2023-04-05T07:24:44.806Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ayush@parallax.co.in\",\n  \"link_id\": \"V89NANyoTkM0H3gQyC-Hb\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b3db8b2-9d35-4c23-bea8-1cfd6bd0f43d",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Verify Phone",
+            "url": "localhost:3000/api/auth/verify-phone",
+            "method": "POST",
+            "sortNum": 48750,
+            "created": "2023-04-10T06:50:04.847Z",
+            "modified": "2023-04-10T07:24:47.352Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"+919323985699\",\n  \"otp\": \"793690\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7e96720-4900-47f0-b6a3-b5bfbed8811b",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Forgot Password",
+            "url": "localhost:3000/api/auth/forgot-password",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-24T06:28:54.130Z",
+            "modified": "2023-04-18T07:19:35.892Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"client_id\": \"terry_1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b588e68-cc70-4a60-897f-89737a934863",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Register Payment Method",
+            "url": "localhost:3000/api/account/register-payment",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-03-27T03:27:31.894Z",
+            "modified": "2023-03-28T07:31:04.618Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bank_name\": \"Shinhan Bank\",\n  \"account_number\": \"06724001341997\",\n  \"account_holder_name\": \"Mohan Yadav\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a824bfaa-70e2-4fb6-9413-f0ec8d43b468",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Change Password for user account",
+            "url": "localhost:3000/api/account/change-password",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2023-04-10T08:03:48.935Z",
+            "modified": "2023-04-10T08:07:59.244Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"current_password\": \"Moiingroup@4541\",\n  \"new_password\": \"Moiingroup@454\",\n  \"confirm_new_password\": \"Moiingroup@454\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bcbb7d42-e134-4fa6-8045-06078a5cf638",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Send Verification - Change phone number",
+            "url": "https://p2p-api.tbtlaw.in//api/account/send-phone-verification",
+            "method": "POST",
+            "sortNum": 57500,
+            "created": "2023-04-10T09:26:23.549Z",
+            "modified": "2023-04-12T10:36:43.969Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"+9192323232\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1226f86d-b899-4f53-9a9a-7f96092f8861",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Verify Phone for logged in user",
+            "url": "localhost:3000/api/account/verify-phone",
+            "method": "POST",
+            "sortNum": 58750,
+            "created": "2023-04-10T09:44:00.182Z",
+            "modified": "2023-04-10T10:02:47.543Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"+9193239856901\",\n  \"otp\": \"927925\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ccf972c-7445-49cc-9f7f-4426b01eb56a",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Reset Password",
+            "url": "localhost:3000/api/auth/reset-password",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-03-27T01:50:23.896Z",
+            "modified": "2023-03-28T06:54:15.519Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"client_id\": \"mohan95\",\n  \"password\": \"Moiingroup@4541\",\n  \"otp\": \"599322\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7f7cd6df-cad3-4926-a522-8e2083bfd9c3",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "20e8be42-c0b8-41a6-8f96-2bfeb55505ce",
+            "name": "Delete Payment Method",
+            "url": "localhost:3000/api/account/payment-method/642297b82578a8be7a17e4c9",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-03-27T03:40:19.204Z",
+            "modified": "2023-04-03T02:00:16.909Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "42e3c6ef-d6cb-4c8a-bbf0-da9b794bc9da",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "30fd5886-9b6a-4573-9539-ae7373f8fb21",
+            "name": "Add a trade",
+            "url": "localhost:3000/api/trade/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-03-28T02:19:17.030Z",
+            "modified": "2023-04-13T03:03:44.069Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"trade_type\": \"sell\",\n  \"trading_coin\": \"ethereum\",\n  \"payment_id\": \"642297b82578a8be7a17e4c9\",\n  \"total_quantity\": \"1\",\n  \"minimum_buy_amount\": \"100000000\",\n  \"maximum_buy_amount\": \"1000000000\",\n  \"price\": \"35809490\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d9c88a8e-f5b2-49ed-a202-6605f19e9e3d",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "30fd5886-9b6a-4573-9539-ae7373f8fb21",
+            "name": "Get all trades for a user",
+            "url": "localhost:3000/api/trade/trades/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-03-28T02:57:10.583Z",
+            "modified": "2023-05-23T06:04:56.383Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5739d75d-24ee-4eb3-b5fe-e9d48f0d8769",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "30fd5886-9b6a-4573-9539-ae7373f8fb21",
+            "name": "Get all trades by trade type",
+            "url": "localhost:3000/api/trade/trades/sell/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-03-28T03:38:57.595Z",
+            "modified": "2023-05-03T05:24:54.557Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "747576d1-d2cc-4e95-9111-d10bf262facb",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "e643249c-6e29-4999-90f1-b60804e852b3",
+            "name": "Get all orders of user by status",
+            "url": "localhost:3000/api/order/1/1",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-03-29T02:20:28.342Z",
+            "modified": "2023-05-23T06:22:14.543Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "acff3cd4-860c-41b0-895a-557c2c696412",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "e643249c-6e29-4999-90f1-b60804e852b3",
+            "name": "Create an order",
+            "url": "localhost:3000/api/order/",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-03-29T03:33:31.834Z",
+            "modified": "2023-04-14T08:56:10.777Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"trade_id\": \"64390e3e14c212811ac066e0\",\n  \"seller_id\": \"64269a7717389027705c9d6b\",\n  \"quantity\": \"0.5\",\n  \"depositor_name\": \"terry_1\",\n  \"deposited_amount\": \"550\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d992786d-78ab-462a-9467-73c6e9470c65",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "e643249c-6e29-4999-90f1-b60804e852b3",
+            "name": "Approve Order",
+            "url": "localhost:3000/api/order/approve/6426abcca7af3128167cf70c",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-03-29T08:06:05.890Z",
+            "modified": "2023-03-31T09:50:00.543Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "056ab4d8-0a86-421c-a2fd-2d29956fe5a9",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "d131ad78-ecdb-4048-bd57-fc678c6c27e0",
+            "name": "Deposit Completed",
+            "url": "localhost:3000/api/webhooks/deposit-completed",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-04-03T07:13:33.307Z",
+            "modified": "2023-04-03T10:03:05.613Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"webhookIdx\": 943,\n    \"webhookTargetIdx\": 304049,\n    \"webhookTargetDataScheme\": \"TRANSACTION_1\",\n    \"data\": {\n      \"memo\": null,\n      \"txid\": \"0x3a40383a0ff49d526b1243eb622fcfbbbf46f0e64858cd11d5e549a33d2d7ff6\",\n      \"type\": \"DEPOSIT\",\n      \"uuid\": \"b385a888-b242-4911-b27b-8c1d877d1d78\",\n      \"nonce\": 9,\n      \"amount\": \"0.00100000000000000000\",\n      \"status\": \"FINALIZED\",\n      \"symbol\": \"ETH\",\n      \"usedFee\": \"0.00372073846590600000\",\n      \"toAddress\": \"0x0FD32481684a38043eC2a9835e2a384d2f684662\",\n      \"failedDate\": null,\n      \"blockHeight\": \"8766047\",\n      \"createdDate\": \"2023-04-03T09:56:12.095Z\",\n      \"fromAddress\": \"0xF2D28c948072437c682BDED236d76424F76E1D70\",\n      \"outputIndex\": 0,\n      \"toAddresses\": [\n        \"0x0FD32481684a38043eC2a9835e2a384d2f684662\"\n      ],\n      \"modifiedDate\": \"2023-04-03T09:59:03.000Z\",\n      \"finalizedDate\": \"2023-04-03T09:59:03.000Z\",\n      \"fromAddresses\": [\n        \"0xF2D28c948072437c682BDED236d76424F76E1D70\"\n      ],\n      \"contractAddress\": null,\n      \"feePayerAddress\": null,\n      \"unfinalizedDate\": \"2023-04-03T09:56:12.000Z\",\n      \"useFeeDelegation\": false,\n      \"transactionCurrency\": {\n        \"krw\": \"0.00000000\",\n        \"usd\": \"0.00000000\"\n      }\n    }\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a355b862-e88d-4b6b-8fe7-390a4d9de0c8",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "585010b6-9565-48b5-8699-38e810382634",
+            "name": "Get profile information from client_id",
+            "url": "localhost:3000/api/profile/mohan95",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-04-05T08:30:37.665Z",
+            "modified": "2023-04-05T09:02:50.057Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9d7023a-a110-4d78-9fdd-44044d1b4805",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "585010b6-9565-48b5-8699-38e810382634",
+            "name": "Get all trades for a profile with pagination",
+            "url": "localhost:3000/api/profile/trades/mohan95",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2023-04-06T03:32:18.371Z",
+            "modified": "2023-04-06T03:53:58.726Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b759e522-8fec-4848-ab60-841b2ceb80ad",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "585010b6-9565-48b5-8699-38e810382634",
+            "name": "Get all reviews for a profile with pagination",
+            "url": "localhost:3000/api/profile/reviews/mohan95",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-04-06T03:46:44.826Z",
+            "modified": "2023-04-06T03:47:56.911Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3efcfa50-aca4-4742-9573-4a9b4e4ade7d",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "585010b6-9565-48b5-8699-38e810382634",
+            "name": "Get all statistics for a profile",
+            "url": "localhost:3000/api/profile/statistics/mohan95",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-04-06T08:50:47.454Z",
+            "modified": "2023-04-06T08:51:17.027Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "327bac29-db6e-474a-84a8-48a9c5749e01",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "492fb57f-38e9-4dfe-aba5-a19e7c7f1ce9",
+            "name": "Signout",
+            "url": "localhost:3000/api/auth/signout",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-04-11T01:27:56.231Z",
+            "modified": "2023-04-11T01:28:37.168Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a49d14f-d2e7-4868-8b1a-4950721b8d8a",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Get all users by pagination",
+            "url": "localhost:3000/api/admin/users/",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-04-18T06:45:31.360Z",
+            "modified": "2023-05-02T08:09:57.981Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f16948f-88af-45b8-b387-5ac83f139263",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Get all assets for all users by pagination",
+            "url": "localhost:3000/api/admin/assets/0",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2023-04-18T07:16:39.804Z",
+            "modified": "2023-05-02T05:15:56.066Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2298e6ac-e429-4537-b963-4fc482713cc3",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Get all orders by pagination",
+            "url": "localhost:3000/api/admin/orders/1",
+            "method": "POST",
+            "sortNum": 210000,
+            "created": "2023-04-18T09:31:37.400Z",
+            "modified": "2023-05-02T05:19:39.613Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc386171-35f4-4458-8d2b-3fb0825a2187",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Get all trades by pagination",
+            "url": "localhost:3000/api/admin/trades/1",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2023-04-18T09:38:50.945Z",
+            "modified": "2023-04-18T09:39:07.349Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{USER_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "db51b50a-54b7-4d18-8ffe-cca87372d6af",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Search users",
+            "url": "localhost:3000/api/admin/users/search/terry/",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2023-05-02T03:58:40.882Z",
+            "modified": "2023-05-02T09:27:41.100Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fd094032-4a8e-4aeb-8913-c49a86c58bfa",
+            "colId": "52fb7d80-91a5-400d-9d82-87e01cd9e8b0",
+            "containerId": "46fe5588-0bfc-4eda-af7e-d8198278d3c7",
+            "name": "Add / Remove Partner Seller",
+            "url": "localhost:3000/api/admin/user/partner",
+            "method": "POST",
+            "sortNum": 240000,
+            "created": "2023-05-02T07:52:10.813Z",
+            "modified": "2023-05-02T09:29:04.232Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"64269a7717389027705c9d6b\",\n  \"partner\": true\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{ADMIN_TOKEN}}"
+            },
+            "tests": []
+        }
+    ]
+}
